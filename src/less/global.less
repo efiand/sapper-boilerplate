@@ -1,0 +1,90 @@
+html {
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	--color-black: #000000;
+	--color-blacky: #333333;
+	--color-white: #ffffff;
+
+	@media @tablet-desktop {
+		font-size: 16px;
+	}
+}
+
+a,
+button,
+input {
+	font: inherit;
+	text-decoration-skip-ink: none;
+	color: inherit;
+	background-color: transparent;
+	transition-property: color, opacity, background-color, border, box-shadow;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+
+	&::-moz-focus-inner {
+		border: none;
+	}
+}
+
+button {
+	box-sizing: content-box;
+	cursor: pointer;
+	user-select: none;
+}
+
+input {
+	box-sizing: border-box;
+	width: 100%;
+	-webkit-text-fill-color: currentColor;
+	box-shadow: none;
+	appearance: none;
+
+	&:-webkit-autofill {
+		box-shadow: none;
+	}
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		appearance: none;
+	}
+
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+svg {
+	fill: currentColor;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+wbr::after {
+	content: "\A";
+	white-space: pre;
+}
